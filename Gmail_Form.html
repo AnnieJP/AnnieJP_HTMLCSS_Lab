@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gmail Account Form</title>
+        <style>
+            body{
+
+                margin:0%;
+                background-color: rgba(214, 186, 240, 0.404);
+                background-image: url('Images\\download.jfif');
+                background-repeat: no-repeat;
+                background-size: 100%;
+
+            }
+            div{
+                min-width:350px;
+                padding: 15px;
+                position:absolute;
+                font-size: 20px;
+                top: 15%;
+                left: 35%;
+                line-height: 40px;
+                border: 2px solid white;
+                border-radius: 10px;
+                text-align:center;
+            }
+            input{
+                height: 30px;
+                width: 75%;
+                padding-left: 10px;
+                border-radius: 2px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            button{
+                
+                margin:10px;
+                width:80px;
+                border-radius:4px;
+                height:30px;
+                color: whitesmoke;
+                background-color: rgba(157, 150, 197);
+            }
+
+            input:focus{
+                background-color: rgba(70, 131, 180, 0.35);
+                outline: none;
+                color: white;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <section>
+            
+            <div>
+                <form action="" id="lab-form">
+                    <h3> Create Gmail Account</h3>
+                    <input type="text" name="name" placeholder="Full Name" required><br>
+                    <input type="number" name="contact_number" min="6000000000" max="9999999999" pattern="\d{10}" placeholder="Contact Number" required><br>
+                    <input type="text" name="email_id" placeholder="Enter Email ID" required><br>
+                    <button form="lab-form">Reset</button>
+                    <button form="lab-form">Submit</button>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
